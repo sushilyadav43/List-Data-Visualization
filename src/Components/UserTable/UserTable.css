@@ -1,0 +1,106 @@
+/* UserList.css */
+
+.user-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 5px;
+    margin-bottom:10px ;
+    background-color: #4f565d;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .filter-bar {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-bar .ant-select {
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+  
+  .filter-button,
+  .clear-filters-button {
+    flex: 1;
+    max-width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .filter-button {
+    background-color: #1890ff;
+    color: #fff;
+  }
+  
+  .clear-filters-button {
+    background-color: #f5222d;
+    color: #fff;
+  }
+  
+  .filter-button:hover,
+  .clear-filters-button:hover {
+    opacity: 0.8;
+  }
+  
+  .table-container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .ant-table {
+    border-radius: 8px;
+  }
+  
+  .download-button {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .filter-bar {
+      flex-direction: column;
+    }
+  
+    .filter-bar .ant-select {
+      width: 100%;
+    }
+  
+    .filter-buttons {
+      margin-left: 0;
+    }
+  
+    .filter-button,
+    .clear-filters-button {
+      max-width: none;
+      width: 100%;
+    }
+  }
+  
